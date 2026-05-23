@@ -1,0 +1,26 @@
+{
+  "name": "npm-safe",
+  "version": "0.1.2",
+  "description": "A small safety wrapper for npm install.",
+  "type": "module",
+  "bin": {
+    "npm-safe": "./bin/npm-safe.mjs",
+    "npsafe": "./bin/npm-safe.mjs"
+  },
+  "scripts": {
+    "check": "node --check ./bin/npm-safe.mjs"
+  },
+  "engines": {
+    "node": ">=14",
+    "npm": ">=6"
+  },
+  "license": "MIT",
+  "files": [
+    "bin/",
+    "README.md",
+    "README.ja.md",
+    "ADVANCED.md",
+    "ADVANCED.ja.md",
+    "LICENSE"
+  ]
+}
