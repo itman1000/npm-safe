@@ -1,4 +1,4 @@
-# npm-safe
+# @itman1000/npm-safe
 
 `npm-safe` is a small safety wrapper for `npm install`. It supports npm 6 and newer.
 
@@ -7,7 +7,7 @@
 Install once:
 
 ```bash
-npm install -g npm-safe --ignore-scripts
+npm install -g @itman1000/npm-safe --ignore-scripts
 ```
 
 Then use `npm-safe install` instead of `npm install`:

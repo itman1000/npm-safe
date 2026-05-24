@@ -1,8 +1,8 @@
-# npm-safe Advanced版
+# @itman1000/npm-safe Advanced版
 
 この文書は、standard版より詳しい機能や運用上の注意点を説明します。
 
-standard版は意図的に短くしており、基本は `npm install` の代わりに `npm-safe install` を使うだけです。
+standard版は意図的に短くしており、基本は `@itman1000/npm-safe` をインストールして、`npm install` の代わりに `npm-safe install` を使うだけです。
 
 ## 設計目的
 
@@ -30,10 +30,10 @@ standard版は意図的に短くしており、基本は `npm install` の代わ
 
 `npm-safe` は npm 6以上を対応対象にしています。npm 5以前は対応対象外です。
 
-まず1回だけ `npm-safe` をインストールします。
+まず1回だけ `@itman1000/npm-safe` をインストールします。
 
 ```bash
-npm install -g npm-safe --ignore-scripts
+npm install -g @itman1000/npm-safe --ignore-scripts
 ```
 
 その後、プロジェクトのディレクトリで使います。
@@ -294,7 +294,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm install -g npm-safe --ignore-scripts
+      - run: npm install -g @itman1000/npm-safe --ignore-scripts
       - run: npm-safe ci
       - run: npm-safe verify --strict
 ```

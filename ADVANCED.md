@@ -1,8 +1,8 @@
-# npm-safe Advanced version
+# @itman1000/npm-safe Advanced version
 
 This guide explains optional controls and operational details for people who need more than the Standard version.
 
-The Standard version is intentionally short: install `npm-safe`, then use `npm-safe install` instead of `npm install`.
+The Standard version is intentionally short: install `@itman1000/npm-safe`, then use `npm-safe install` instead of `npm install`.
 
 ## Design goal
 
@@ -30,10 +30,10 @@ The default policy keeps the common command simple while blocking high-value ins
 
 `npm-safe` supports npm 6 and newer. npm 5 and earlier are not supported.
 
-Install `npm-safe` once:
+Install `@itman1000/npm-safe` once:
 
 ```bash
-npm install -g npm-safe --ignore-scripts
+npm install -g @itman1000/npm-safe --ignore-scripts
 ```
 
 Then use it in a project directory:
@@ -292,7 +292,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm install -g npm-safe --ignore-scripts
+      - run: npm install -g @itman1000/npm-safe --ignore-scripts
       - run: npm-safe ci
       - run: npm-safe verify --strict
 ```
